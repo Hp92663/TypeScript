@@ -63,7 +63,7 @@ function add (x, y) {
 
 console.log(add('2', '3'))
 
-// output - 23
+# output - 23
  
 ```
 
@@ -82,14 +82,69 @@ function add (x:number, y:number) {
   return x+y;
 }
 
-// throw error type is mismatched 
-// Argument of type 'string' is not assignable to parameter of type 'number'.
+# throw error type is mismatched 
+# Argument of type 'string' is not assignable to parameter of type 'number'.
 
 console.log(add('2', '3'))
 
 
 console.log(add(2, 3))
 
-// output - 5
+# output - 5
 
+```
+#
+
+<h1 align="center">  Basic of TypeScript </h1>
+
+In JavaScript and TypeScript there are 3 main primitive datatypes is
+
+- string
+- number
+- boolean
+
+and another less common use primitive datatypes is 
+
+- null
+- undefined
+- symbol
+
+
+#
+
+<h3> unable to infer </h3>
+
+TypeScript may not always properly infer what the type of variable may such uses. it will set the type to 'Any' with disabl e type checking
+
+#
+ <h3>Type Assignment / Simple type </h3>
+
+when creating a variable, there are two main way in TypeScript to Assignment
+
+- Explicit
+
+- Implicit
+
+#
+<h4>Explicit </h4>
+* write a type of variable
+
+For example
+
+```javascript
+
+let a:number = 3;
+let Fname:string = "Hiren"; 
+```
+#
+<h4> Implicit </h4>
+
+- TypeScript will 'guess' the type, based on assign value
+
+For example
+
+```javascript
+
+let a = 1;
+let Fname ="Hiren";
 ```
