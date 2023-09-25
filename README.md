@@ -63,7 +63,7 @@ function add (x, y) {
 
 console.log(add('2', '3'))
 
-# output - 23
+// output - 23
  
 ```
 
@@ -90,6 +90,6 @@ console.log(add('2', '3'))
 
 console.log(add(2, 3))
 
-# output - 5
+// output - 5
 
 ```
