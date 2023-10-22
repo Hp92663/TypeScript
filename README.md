@@ -95,7 +95,7 @@ console.log(add(2, 3))
 ```
 #
 
-<h1 align="center">  Basic of TypeScript </h1>
+##  Basic of TypeScript
 
 In JavaScript and TypeScript there are 3 main primitive datatypes is
 
@@ -110,14 +110,14 @@ and another less common use primitive datatypes is
 - symbol
 
 
-#
 
-<h3> unable to infer </h3>
+
+### unable to infer
 
 TypeScript may not always properly infer what the type of variable may such uses. it will set the type to 'Any' with disabl e type checking
 
-#
- <h3>Type Assignment / Simple type </h3>
+
+### Type Assignment / Simple type
 
 when creating a variable, there are two main way in TypeScript to Assignment
 
@@ -126,25 +126,65 @@ when creating a variable, there are two main way in TypeScript to Assignment
 - Implicit
 
 #
-<h4>Explicit </h4>
+#### Explicit
 * write a type of variable
 
 For example
 
 ```javascript
-
 let a:number = 3;
 let Fname:string = "Hiren"; 
 ```
 #
-<h4> Implicit </h4>
+#### Implicit
 
 - TypeScript will 'guess' the type, based on assign value
 
 For example
 
 ```javascript
-
 let a = 1;
 let Fname ="Hiren";
+
 ```
+
+## Error in types assignment
+
+- TypeScript will throw an error if datatype don't match
+
+#### Explicit 
+
+
+```javascript
+let fName:string = "Hiren"; // Here type is 'string'
+fName = 53;
+
+```
+> Here re-assign value is `number` to diffrent type so that throw error datatype is mismatched
+
+> **Type `number` is not assignable to type `string`.** 
+
+#
+
+#### Implicit
+
+Implicit type assignment would have made `fName` less noticeable as a `string`, but both will throw an error:
+
+
+
+```javascript
+let fName = "Hiren"; // infered to string type
+fName = 53
+```
+ > Re-assign the value to diffrent type.
+
+
+**JavaScript** will not **throw** an error for mismatched types.
+
+ 
+
+
+
+
+
+
